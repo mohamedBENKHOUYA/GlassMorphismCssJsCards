@@ -137,5 +137,36 @@ body::after {
     font-weight: 500;
     /* pointer-events: none; */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: anim 1s infinite;
+    /* transition:background-color 1s ease-in-out 0s; */
+    /* transition: all .6s ease; */
+    /* transition:all 1s ease-in-out 0s; */
+   
+}
+.content a:hover {
+    animation: none;
+    background: #fff;
+    color: #000;
 }
 
+@keyframes anim {
+    0% {
+        background: linear-gradient(to right bottom, #4679CC, #46B7CC );
+    }
+    25% {
+        background: linear-gradient(to right bottom, #46CC5B, #198C2A );
+
+    }
+    50%{
+        background: linear-gradient(to right bottom, #8C8A19, #DF6613 );
+
+    }
+    75%{
+        background: linear-gradient(to right bottom, #A04F18, #46B7CC );
+
+    }
+    100%{
+        background: linear-gradient(to right bottom, #A018A0, #46B7CC );
+
+    }
+}
